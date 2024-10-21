@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re:Zero Typography</title>
+</head>
+
+<style>
+    @font-face {
+        font-family: 'Big Caslon';
+        src: url('assets/fonts/big-caslon-regular.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'DIN Condensed';
+        src: url('assets/fonts/DINCondensed-Bold.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Ryumin B-KL';
+        src: url('assets/fonts/RyuminB-KL.otf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Gothic MB101 DB';
+        src: url('assets/fonts/A-OTF-GothicMB101Pro-DB.otf') format('truetype');
+    }
+
+    /* Main Title Styling */
+    .main-title {
+        text-align: center;
+        margin-top: 50px;
+        position: relative;
+        left: -57px;
+    }
+
+    .big-caslon {
+        font-family: 'Big Caslon', serif;
+        font-size: 110px;
+        font-weight: normal;
+        display: inline-block;
+        -webkit-text-stroke: 1px #796daa;
+
+    }
+
+    .gothic-mb-title {
+        font-family: 'Gothic MB101 DB', sans-serif;
+        font-size: 110px;
+        display: inline-block;
+        font-weight: 900;
+        -webkit-text-stroke: 1.5px #000;
+        position: relative;
+        left: -5px;
+    }
+
+    .din-condensed {
+        font-family: 'DIN Condensed', sans-serif;
+        font-size: 100px;
+        font-weight: bold;
+        display: inline-block;
+    }
+
+    /* English Subtitle Styling */
+    .subtitle {
+        text-align: center;
+        margin-top: -52px;
+        font-family: 'DIN Condensed', sans-serif;
+        font-size: 13px;
+        color: #555;
+        letter-spacing: 3.5px;
+    }
+
+    /* Japanese Title Styling */
+    .japanese-title {
+        text-align: center;
+        margin-top: -20px;
+        position: relative;
+        left: 32px;
+        top: -3px;
+        letter-spacing: -6px;
+
+    }
+
+    .ryumin {
+        font-family: 'Ryumin B-KL', serif;
+        font-size: 40px;
+        display: inline-block;
+        transform: scale(0.84, 1);
+    }
+
+    .gothic-mb {
+        font-family: 'Gothic MB101 DB', sans-serif;
+        font-size: 45px;
+        display: inline-block;
+        font-weight: bolder;
+        position: relative;
+        -webkit-text-stroke: 1px #000;
+        transform: scale(0.95, 1);
+    }
+
+    .ze {
+        position: relative;
+        top: -19px;
+        left: -22px;
+    }
+
+    /* 切掉底部一部分 */
+    .clip {
+        clip-path: polygon(0 0%, 100% 0, 100% 85%, 0 85%);
+    }
+
+    .clip-73 {
+        clip-path: polygon(0 0%, 100% 0, 100% 73%, 0 73%);
+    }
+
+    .ro {
+        position: relative;
+        left: -40px;
+        top: 3px;
+    }
+
+    .margin-slim {
+        margin: 0 -5px;
+    }
+
+    .me {
+        position: relative;
+        top: -14px;
+        margin-right: -5px;
+    }
+
+    .clip-72 {
+        clip-path: polygon(0 0%, 100% 0, 100% 72%, 0 72%);
+    }
+
+    .clip-80 {
+        clip-path: polygon(0 0%, 100% 0, 100% 80%, 0 80%);
+    }
+
+    .clip-75 {
+        clip-path: polygon(0 0%, 100% 0, 100% 75%, 0 75%);
+    }
+
+    .sei {
+        position: relative;
+        top: 7px;
+        clip-path: polygon(0 0%, 100% 0, 100% 85%, 0 85%);
+    }
+
+    .kai {
+        position: relative;
+        top: -3px;
+        clip-path: polygon(0 0%, 100% 0, 100% 85%, 0 85%);
+    }
+</style>
+
+<body>
+    <div class="main-title">
+        <span class="big-caslon clip-73" style="color: #796daa;">Re</span>
+        <span class="big-caslon"
+            style="position: relative; top: -3px; left: -6px; -webkit-text-stroke: 2px #000;">:</span>
+        <span class="gothic-mb-title"><span class="ze clip">ゼ</span><span class="ro">ロ</span></span>
+    </div>
+    <div class="subtitle">
+        <span class="din-condensed-english">Re: Life in a different world from zero</span>
+    </div>
+    <div class="japanese-title">
+        <span class="ryumin clip-72">から</span><span class="gothic-mb margin-slim clip"
+            style="clip-path: polygon(0 0%, 126% 0, 113% 76%, 0 77%);">始</span><span class="ryumin clip"><span
+                class="me">め</span><span class="clip-80">る</span></span>
+        <span class="gothic-mb " style="letter-spacing: -2px; margin-left: -9px;"><span class="clip">異</span><span
+                class="sei">世</span><span class="kai">界</span><span class="clip">生活</span></span>
+    </div>
+</body>
+
+</html>
